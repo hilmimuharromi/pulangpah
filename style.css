@@ -1,0 +1,184 @@
+body {
+    background-color: #dcffcc;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+#peta {
+    display: flexbox;
+    padding-left: 30vw;
+    width: 30vw;
+    height: 90vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#peta img {
+    width: 20vw;
+    height: 60vh;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+}
+
+.container>* {
+    width: 100%;
+} 
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #273442;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #273442;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.5);
+    transform: translateY(-0.5rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#jalan {
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 20vh;
+    margin-bottom: 50px;
+
+}
+
+#tombol {
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 40vh;
+    padding: 0px;
+}
+
+#kiri {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#kiri:hover {
+    transform: translateY(-0.5rem);
+    transition: transform 150ms;
+}
+
+#kanan {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#kanan:hover {
+    transform: translateY(-0.5rem);
+    transition: transform 150ms;
+
+}
+
+#lurus:hover {
+    transform: translateY(-0.5rem);
+    transition: transform 150ms;
+}
+
+
+
+#lurus {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+#menang {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 40vh;
+    padding: 0px;
+    display: none;
+}
+
+#kalah {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 40vh;
+    padding: 0px;
+    display: none;
+}
+
+
+#caraMain {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+}
+
+#tutor {
+    display: inline;
+    width: 100vw;
+}
+
+#tutor img {
+    width: 50px;
+    height: 50px;
+}

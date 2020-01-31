@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <audio id="kiriSuara" src="/sound/kiri.mp3"></audio>
+    <audio id="kananSuara" src="/sound/kanan.mp3"></audio>
+    <audio id="lurusSuara" src="/sound/lurus.mp3"></audio>
+    <div id="peta">
+        <h1>Hafalkan petunjuk ini</h1>
+        <h2>akan hilang dalam <span id="detik"></span> detik</h2>
+        <img id="map" src="/img/map/map1.png" alt="">
+    </div>
+
+    <div id="jalan">
+        <img src="/img/jalan.png" alt="">
+        <h2>Jalan <span id="noJalan"></span></h2>
+    </div>
+
+    <div id='tombol'>
+
+        <img id="kiri" onclick="cekJawaban('kiri'); playKiri();" src="/img/kiri.png" alt="">
+        <img id="lurus" onclick="cekJawaban('lurus'); playLurus();" src="/img/lurus.png" alt="">
+        <img id="kanan" onclick="cekJawaban('kanan'); playKanan();" src="/img/kanan.png" alt="">
+    </div>
+
+    <div id="menang" onload="playMenang()">
+        <audio id="menangSuara" src="/sound/menang.mp3"></audio>
+        <img src="/img/house.png" alt="">
+        <h2>SELAMAT ANDA<BR>MENANG</h2>
+        <img src="/img/cars.png" alt="">
+    </div>
+
+    <div id="kalah" onload="playkalah()">
+        <audio id="kalahSuara" src="/sound/kalah.mp3"></audio>
+        <H1>GAME OVER!!!</H1>
+        <img src="/img/rumahsalah.png" alt="">
+        <h2>ANDA NYASAR</h2>
+        <img src="/img/cars.png" alt="">
+    </div>
+
+    <script src="/script/script.js"></script>
+    <script src="/script/peta.js"></script>
+</body>
+
+</html>
